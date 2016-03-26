@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://xuelangcxy.github.io/"/>
-  <updated>2016-03-26T08:09:26.607Z</updated>
+  <updated>2016-03-26T09:23:29.586Z</updated>
   <id>http://xuelangcxy.github.io/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://xuelangcxy.github.io/2016/03/24/echarts-for-air-quality/"/>
     <id>http://xuelangcxy.github.io/2016/03/24/echarts-for-air-quality/</id>
     <published>2016-03-24T09:30:33.903Z</published>
-    <updated>2016-03-26T08:09:26.607Z</updated>
+    <updated>2016-03-26T09:23:29.586Z</updated>
     
     <content type="html">&lt;hr&gt;
 &lt;p&gt;&lt;a href=&quot;http://echarts.baidu.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;ECharts&lt;/a&gt;是一个免费的，功能强大的图表和可视化库，为你的商业产品提供直观的加入，互动和高度可定制图表的一个简单方法。它是用纯JavaScript和基于zrender的一个全新的轻量级画布库。&lt;/p&gt;
@@ -57,7 +57,9 @@
       <category term="Node.js" scheme="http://xuelangcxy.github.io/categories/Node-js/"/>
     
     
-      <category term="AQI Echarts" scheme="http://xuelangcxy.github.io/tags/AQI-Echarts/"/>
+      <category term="AQI" scheme="http://xuelangcxy.github.io/tags/AQI/"/>
+    
+      <category term="Echarts" scheme="http://xuelangcxy.github.io/tags/Echarts/"/>
     
   </entry>
   
@@ -66,7 +68,7 @@
     <link href="http://xuelangcxy.github.io/2016/03/02/hello-world/"/>
     <id>http://xuelangcxy.github.io/2016/03/02/hello-world/</id>
     <published>2016-03-02T11:25:43.407Z</published>
-    <updated>2016-03-26T08:43:03.121Z</updated>
+    <updated>2016-03-26T09:24:15.270Z</updated>
     
     <content type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&quot;Quick-Start&quot;&gt;&lt;a href=&quot;#Quick-Start&quot; class=&quot;headerlink&quot; title=&quot;Quick Start&quot;&gt;&lt;/a&gt;Quick Start&lt;/h2&gt;&lt;h3 id=&quot;Create-a-new-post&quot;&gt;&lt;a href=&quot;#Create-a-new-post&quot; class=&quot;headerlink&quot; title=&quot;Create a new post&quot;&gt;&lt;/a&gt;Create a new post&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo new &lt;span class=&quot;string&quot;&gt;&quot;My New Post&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
@@ -89,6 +91,8 @@
     
       <category term="Hexo" scheme="http://xuelangcxy.github.io/categories/Hexo/"/>
     
+    
+      <category term="Hexo" scheme="http://xuelangcxy.github.io/tags/Hexo/"/>
     
   </entry>
   
