@@ -185,8 +185,8 @@ th {
 }
 body {
   position: relative;
-  font-family: Lato, "PingFang SC", "Microsoft YaHei", sans-serif;
-  font-size: 14px;
+  font-family: "Microsoft YaHei", Verdana, sans-serif;
+  font-size: 16px;
   line-height: 2;
   color: #555;
   background: #fff;
@@ -216,7 +216,7 @@ h6 {
   padding: 0;
   font-weight: bold;
   line-height: 1.5;
-  font-family: Lato, "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-family: Georgia, sans;
 }
 h2,
 h3,
@@ -503,7 +503,7 @@ pre,
   margin: 20px 0;
   padding: 15px;
   overflow: auto;
-  font-size: 13px;
+  font-size: 15px;
   color: #eaeaea;
   line-height: 1.6;
 }
@@ -1011,7 +1011,7 @@ pre .javascript .function {
 .post-body .figure .caption {
   margin: 10px auto 15px;
   text-align: center;
-  font-size: 14px;
+  font-size: 16px;
   color: #999;
   font-weight: bold;
   line-height: 1;
@@ -1513,7 +1513,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #9dcd2e;
+  background: #9e11d4;
 }
 .links-of-blogroll {
   font-size: 13px;
