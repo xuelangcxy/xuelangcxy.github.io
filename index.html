@@ -62,7 +62,7 @@
 <meta name="description" content="我不编写代码，我只是代码的搬运工">
 <meta property="og:type" content="website">
 <meta property="og:title" content="豆CODE年华">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:url" content="http://xuelangcxy.github.io/index.html">
 <meta property="og:site_name" content="豆CODE年华">
 <meta property="og:description" content="我不编写代码，我只是代码的搬运工">
 <meta name="twitter:card" content="summary">
@@ -296,29 +296,16 @@
 
       
         
-          
-            <hr>
-<p><a href="http://echarts.baidu.com/" target="_blank" rel="external">ECharts</a>是一个免费的，功能强大的图表和可视化库，为你的商业产品提供直观的加入，互动和高度可定制图表的一个简单方法。它是用纯JavaScript和基于zrender的一个全新的轻量级画布库。</p>
+          <hr>
+<p><a href="http://echarts.baidu.com/">ECharts</a>是一个免费的，功能强大的图表和可视化库，为你的商业产品提供直观的加入，互动和高度可定制图表的一个简单方法。它是用纯JavaScript和基于zrender的一个全新的轻量级画布库。</p>
+<p>本项目基于<a href="https://nodejs.org/en/">Node.js</a>的<a href="https://www.npmjs.com/package/express">Express</a>框架构建，由于暂时没有架设公网数据库，所以效果演示所用到的数据均来自本地静态文件。</p>
 <h2 id="效果图"><a href="#效果图" class="headerlink" title="效果图"></a>效果图</h2><h3 id="提供bar-柱状图-、line-折线图-和data-数据-三种视图"><a href="#提供bar-柱状图-、line-折线图-和data-数据-三种视图" class="headerlink" title="提供bar(柱状图)、line(折线图)和data(数据)三种视图"></a>提供bar(柱状图)、line(折线图)和data(数据)三种视图</h3><ol>
-<li><p><em>bar(柱状图)</em><br><img src="/images/design-sketch-bar.png" alt="design-sketch-bar"></p>
-</li>
-<li><p><em>line(折线图)</em><br><img src="/images/design-sketch-line.png" alt="design-sketch-line"></p>
-</li>
-<li><p><em>data(数据)</em><br><img src="/images/design-sketch-data.png" alt="design-sketch-data"></p>
-</li>
-</ol>
-<h3 id="为空气质量建立分级，当浓度值落在不同区间时用不同颜色表示"><a href="#为空气质量建立分级，当浓度值落在不同区间时用不同颜色表示" class="headerlink" title="为空气质量建立分级，当浓度值落在不同区间时用不同颜色表示"></a>为空气质量建立分级，当浓度值落在不同区间时用不同颜色表示</h3><p><a href="http://echarts.baidu.com/" target="_blank" rel="external">echarts</a>的颜色控制在<a href="http://echarts.baidu.com/option.html#series-bar.itemStyle.normal.color" target="_blank" rel="external">series.itemStyle.normal.color</a>目录下，默认从全局调色盘<a href="http://echarts.baidu.com/option.html#color" target="_blank" rel="external">option.color</a>获取颜色.<br>echarts能够提供函数返回来制定绘制echarts图表所使用的颜色，如下：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">option.series[<span class="number">0</span>].itemStyle.normal.color = <span class="function"><span class="keyword">function</span>(<span class="params">params</span>) </span>&#123;</span><br><span class="line">	<span class="comment">// build a color map as your need.</span></span><br><span class="line">	<span class="keyword">var</span> colorList = [</span><br><span class="line">		<span class="string">'#8FC31F'</span>, <span class="string">'#D7AF0E'</span>, <span class="string">'#F39800'</span>, <span class="string">'#E3261A'</span>, <span class="string">'#5F52A0'</span>, <span class="string">'#631541'</span>, <span class="string">'white'</span></span><br><span class="line">	];</span><br><span class="line">	<span class="keyword">if</span> (params.series.data[params.dataIndex] &gt; <span class="number">0</span> &amp;&amp; params.series.data[params.dataIndex] &lt;= <span class="number">50</span>) &#123;</span><br><span class="line">		<span class="keyword">return</span> colorList[<span class="number">0</span>]</span><br><span class="line">	&#125; <span class="keyword">else</span> <span class="keyword">if</span> (params.series.data[params.dataIndex] &gt; <span class="number">50</span> &amp;&amp; params.series.data[params.dataIndex] &lt;= <span class="number">100</span>) &#123;</span><br><span class="line">		<span class="keyword">return</span> colorList[<span class="number">1</span>]</span><br><span class="line">	&#125; <span class="keyword">else</span> <span class="keyword">if</span> (params.series.data[params.dataIndex] &gt; <span class="number">100</span> &amp;&amp; params.series.data[params.dataIndex] &lt;= <span class="number">150</span>) &#123;</span><br><span class="line">		<span class="keyword">return</span> colorList[<span class="number">2</span>]</span><br><span class="line">	&#125; <span class="keyword">else</span> <span class="keyword">if</span> (params.series.data[params.dataIndex] &gt; <span class="number">150</span> &amp;&amp; params.series.data[params.dataIndex] &lt;= <span class="number">200</span>) &#123;</span><br><span class="line">		<span class="keyword">return</span> colorList[<span class="number">3</span>]</span><br><span class="line">	&#125; <span class="keyword">else</span> <span class="keyword">if</span> (params.series.data[params.dataIndex] &gt; <span class="number">200</span> &amp;&amp; params.series.data[params.dataIndex] &lt;= <span class="number">300</span>) &#123;</span><br><span class="line">		<span class="keyword">return</span> colorList[<span class="number">4</span>]</span><br><span class="line">	&#125; <span class="keyword">else</span> <span class="keyword">if</span> (params.series.data[params.dataIndex] &gt; <span class="number">300</span>) &#123;</span><br><span class="line">		<span class="keyword">return</span> colorList[<span class="number">5</span>]</span><br><span class="line">	&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">		<span class="keyword">return</span> colorList[<span class="number">6</span>]</span><br><span class="line">	&#125;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<h3 id="提供AQI和6种常见空气污染物浓度变化趋势的展示"><a href="#提供AQI和6种常见空气污染物浓度变化趋势的展示" class="headerlink" title="提供AQI和6种常见空气污染物浓度变化趋势的展示"></a>提供AQI和6种常见空气污染物浓度变化趋势的展示</h3><h4 id="6中常见空气污染物包括："><a href="#6中常见空气污染物包括：" class="headerlink" title="6中常见空气污染物包括："></a>6中常见空气污染物包括：</h4><ol>
-<li>PM2.5<br><img src="/images/design-sketch-pm25.png" alt="design-sketch-pm25"></li>
-<li>PM10</li>
-<li>NO2</li>
-<li>O3</li>
-<li>SO2</li>
-<li>CO</li>
-</ol>
-<h3 id="项目已上传至github"><a href="#项目已上传至github" class="headerlink" title="项目已上传至github"></a>项目已上传至github</h3><p><a href="https://github.com/xuelangcxy/aqiHistory" target="_blank" rel="external">echarts绘制空气质量变化趋势图</a></p>
-
-          
+<li><em>bar(柱状图)</em><br><img src="/images/design-sketch-bar.png" alt="design-sketch-bar">
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/03/24/echarts-for-air-quality/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
         
       
     </div>
@@ -382,6 +369,25 @@
           </span>
 
           
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/Hexo/" itemprop="url" rel="index">
+                    <span itemprop="name">Hexo</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
 
           
             
@@ -411,18 +417,14 @@
 
       
         
-          
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
+          <p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-          
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a><br>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/03/02/hello-world/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
         
       
     </div>
@@ -494,7 +496,7 @@
           
             <div class="site-state-item site-state-categories">
               
-                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-count">2</span>
                 <span class="site-state-item-name">分类</span>
               
             </div>

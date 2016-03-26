@@ -4,9 +4,9 @@
   <subtitle>xuelangcxy</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
-  <updated>2016-03-25T09:32:52.564Z</updated>
-  <id>http://yoursite.com/</id>
+  <link href="http://xuelangcxy.github.io/"/>
+  <updated>2016-03-26T08:09:26.607Z</updated>
+  <id>http://xuelangcxy.github.io/</id>
   
   <author>
     <name>Chen Xueyong</name>
@@ -17,16 +17,16 @@
   
   <entry>
     <title>echart绘制空气质量变化趋势图</title>
-    <link href="http://yoursite.com/2016/03/24/echarts-for-air-quality/"/>
-    <id>http://yoursite.com/2016/03/24/echarts-for-air-quality/</id>
+    <link href="http://xuelangcxy.github.io/2016/03/24/echarts-for-air-quality/"/>
+    <id>http://xuelangcxy.github.io/2016/03/24/echarts-for-air-quality/</id>
     <published>2016-03-24T09:30:33.903Z</published>
-    <updated>2016-03-25T09:32:52.564Z</updated>
+    <updated>2016-03-26T08:09:26.607Z</updated>
     
     <content type="html">&lt;hr&gt;
 &lt;p&gt;&lt;a href=&quot;http://echarts.baidu.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;ECharts&lt;/a&gt;是一个免费的，功能强大的图表和可视化库，为你的商业产品提供直观的加入，互动和高度可定制图表的一个简单方法。它是用纯JavaScript和基于zrender的一个全新的轻量级画布库。&lt;/p&gt;
+&lt;p&gt;本项目基于&lt;a href=&quot;https://nodejs.org/en/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Node.js&lt;/a&gt;的&lt;a href=&quot;https://www.npmjs.com/package/express&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Express&lt;/a&gt;框架构建，由于暂时没有架设公网数据库，所以效果演示所用到的数据均来自本地静态文件。&lt;/p&gt;
 &lt;h2 id=&quot;效果图&quot;&gt;&lt;a href=&quot;#效果图&quot; class=&quot;headerlink&quot; title=&quot;效果图&quot;&gt;&lt;/a&gt;效果图&lt;/h2&gt;&lt;h3 id=&quot;提供bar-柱状图-、line-折线图-和data-数据-三种视图&quot;&gt;&lt;a href=&quot;#提供bar-柱状图-、line-折线图-和data-数据-三种视图&quot; class=&quot;headerlink&quot; title=&quot;提供bar(柱状图)、line(折线图)和data(数据)三种视图&quot;&gt;&lt;/a&gt;提供bar(柱状图)、line(折线图)和data(数据)三种视图&lt;/h3&gt;&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;&lt;em&gt;bar(柱状图)&lt;/em&gt;&lt;br&gt;&lt;img src=&quot;/images/design-sketch-bar.png&quot; alt=&quot;design-sketch-bar&quot;&gt;&lt;/p&gt;
-&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;bar(柱状图)&lt;/em&gt;&lt;br&gt;&lt;img src=&quot;/images/design-sketch-bar.png&quot; alt=&quot;design-sketch-bar&quot;&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;p&gt;&lt;em&gt;line(折线图)&lt;/em&gt;&lt;br&gt;&lt;img src=&quot;/images/design-sketch-line.png&quot; alt=&quot;design-sketch-line&quot;&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;&lt;p&gt;&lt;em&gt;data(数据)&lt;/em&gt;&lt;br&gt;&lt;img src=&quot;/images/design-sketch-data.png&quot; alt=&quot;design-sketch-data&quot;&gt;&lt;/p&gt;
@@ -47,27 +47,30 @@
     <summary type="html">
     
       &lt;hr&gt;
-&lt;p&gt;&lt;a href=&quot;http://echarts.baidu.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;ECharts&lt;/a&gt;是一个免费的，功能强大的图表和可视化库，为你的商业产品提供直观的加入，互动和高度可定制图表的一个简单方法。它
+&lt;p&gt;&lt;a href=&quot;http://echarts.baidu.com/&quot;&gt;ECharts&lt;/a&gt;是一个免费的，功能强大的图表和可视化库，为你的商业产品提供直观的加入，互动和高度可定制图表的一个简单方法。它是用纯JavaScript和基于zrender的一个全新的轻量级画布库。&lt;/p&gt;
+&lt;p&gt;本项目基于&lt;a href=&quot;https://nodejs.org/en/&quot;&gt;Node.js&lt;/a&gt;的&lt;a href=&quot;https://www.npmjs.com/package/express&quot;&gt;Express&lt;/a&gt;框架构建，由于暂时没有架设公网数据库，所以效果演示所用到的数据均来自本地静态文件。&lt;/p&gt;
+&lt;h2 id=&quot;效果图&quot;&gt;&lt;a href=&quot;#效果图&quot; class=&quot;headerlink&quot; title=&quot;效果图&quot;&gt;&lt;/a&gt;效果图&lt;/h2&gt;&lt;h3 id=&quot;提供bar-柱状图-、line-折线图-和data-数据-三种视图&quot;&gt;&lt;a href=&quot;#提供bar-柱状图-、line-折线图-和data-数据-三种视图&quot; class=&quot;headerlink&quot; title=&quot;提供bar(柱状图)、line(折线图)和data(数据)三种视图&quot;&gt;&lt;/a&gt;提供bar(柱状图)、line(折线图)和data(数据)三种视图&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;&lt;em&gt;bar(柱状图)&lt;/em&gt;&lt;br&gt;&lt;img src=&quot;/images/design-sketch-bar.png&quot; alt=&quot;design-sketch-bar&quot;&gt;
     
     </summary>
     
-      <category term="Node.js" scheme="http://yoursite.com/categories/Node-js/"/>
+      <category term="Node.js" scheme="http://xuelangcxy.github.io/categories/Node-js/"/>
     
     
-      <category term="AQI Echarts" scheme="http://yoursite.com/tags/AQI-Echarts/"/>
+      <category term="AQI Echarts" scheme="http://xuelangcxy.github.io/tags/AQI-Echarts/"/>
     
   </entry>
   
   <entry>
     <title>Hello World</title>
-    <link href="http://yoursite.com/2016/03/02/hello-world/"/>
-    <id>http://yoursite.com/2016/03/02/hello-world/</id>
+    <link href="http://xuelangcxy.github.io/2016/03/02/hello-world/"/>
+    <id>http://xuelangcxy.github.io/2016/03/02/hello-world/</id>
     <published>2016-03-02T11:25:43.407Z</published>
-    <updated>2016-03-02T11:25:43.407Z</updated>
+    <updated>2016-03-26T08:43:03.121Z</updated>
     
     <content type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&quot;Quick-Start&quot;&gt;&lt;a href=&quot;#Quick-Start&quot; class=&quot;headerlink&quot; title=&quot;Quick Start&quot;&gt;&lt;/a&gt;Quick Start&lt;/h2&gt;&lt;h3 id=&quot;Create-a-new-post&quot;&gt;&lt;a href=&quot;#Create-a-new-post&quot; class=&quot;headerlink&quot; title=&quot;Create a new post&quot;&gt;&lt;/a&gt;Create a new post&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo new &lt;span class=&quot;string&quot;&gt;&quot;My New Post&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;More info: &lt;a href=&quot;https://hexo.io/docs/writing.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Writing&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;More info: &lt;a href=&quot;https://hexo.io/docs/writing.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Writing&lt;/a&gt;&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&quot;Run-server&quot;&gt;&lt;a href=&quot;#Run-server&quot; class=&quot;headerlink&quot; title=&quot;Run server&quot;&gt;&lt;/a&gt;Run server&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo server&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
 &lt;p&gt;More info: &lt;a href=&quot;https://hexo.io/docs/server.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Server&lt;/a&gt;&lt;/p&gt;
 &lt;h3 id=&quot;Generate-static-files&quot;&gt;&lt;a href=&quot;#Generate-static-files&quot; class=&quot;headerlink&quot; title=&quot;Generate static files&quot;&gt;&lt;/a&gt;Generate static files&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo generate&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
@@ -78,9 +81,13 @@
     
     <summary type="html">
     
-      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&quot;Quick-Start&quot;&gt;&lt;a href=&quot;#Quick-Start&quot; class=&quot;headerlink&quot; title=&quot;Quick Start&quot;&gt;&lt;/a&gt;Quick Start&lt;/h2&gt;&lt;h3 id=&quot;Create-a-new-post&quot;&gt;&lt;a href=&quot;#Create-a-new-post&quot; class=&quot;headerlink&quot; title=&quot;Create a new post&quot;&gt;&lt;/a&gt;Create a new post&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo new &lt;span class=&quot;string&quot;&gt;&quot;My New Post&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;More info: &lt;a href=&quot;https://hexo.io/docs/writing.html&quot;&gt;Writing&lt;/a&gt;&lt;br&gt;
     
     </summary>
+    
+      <category term="Hexo" scheme="http://xuelangcxy.github.io/categories/Hexo/"/>
     
     
   </entry>
