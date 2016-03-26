@@ -41,7 +41,7 @@
 <link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo," />
+  <meta name="keywords" content="Node.js,cheerio,爬虫,美女," />
 
 
 
@@ -59,19 +59,24 @@
 
 
 
-<meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick">
+<meta name="description" content="得益于身边各种老司机带路，得知一个极好的美女图片资源网站，但分类目录太多频繁点击鼠标实在是太累了，本着辛苦自己服务大家的无私奉献精神，立志要开发一个工具能够一键下载网站上所有相关图片。于是很自然的就想到了爬虫，苦于技术有限，只会一点点node.js，所以初步决定用node作为开发语言。
+皇天不负有心人，果然很快就发现了一款神器——cheerio。
+cheerio是nodejs的抓取页面模块，为服">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://xuelangcxy.github.io/2016/03/02/hello-world/index.html">
+<meta property="og:title" content="girlCrawler——一款基于cheerio的网络爬虫工具">
+<meta property="og:url" content="http://xuelangcxy.github.io/2016/03/26/girlCrawler/index.html">
 <meta property="og:site_name" content="豆CODE年华">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick">
-<meta property="og:updated_time" content="2016-03-26T09:24:15.270Z">
+<meta property="og:description" content="得益于身边各种老司机带路，得知一个极好的美女图片资源网站，但分类目录太多频繁点击鼠标实在是太累了，本着辛苦自己服务大家的无私奉献精神，立志要开发一个工具能够一键下载网站上所有相关图片。于是很自然的就想到了爬虫，苦于技术有限，只会一点点node.js，所以初步决定用node作为开发语言。
+皇天不负有心人，果然很快就发现了一款神器——cheerio。
+cheerio是nodejs的抓取页面模块，为服">
+<meta property="og:image" content="http://xuelangcxy.github.io/images/girlCrawler.jpg">
+<meta property="og:updated_time" content="2016-03-26T14:46:35.246Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick">
+<meta name="twitter:title" content="girlCrawler——一款基于cheerio的网络爬虫工具">
+<meta name="twitter:description" content="得益于身边各种老司机带路，得知一个极好的美女图片资源网站，但分类目录太多频繁点击鼠标实在是太累了，本着辛苦自己服务大家的无私奉献精神，立志要开发一个工具能够一键下载网站上所有相关图片。于是很自然的就想到了爬虫，苦于技术有限，只会一点点node.js，所以初步决定用node作为开发语言。
+皇天不负有心人，果然很快就发现了一款神器——cheerio。
+cheerio是nodejs的抓取页面模块，为服">
+<meta name="twitter:image" content="http://xuelangcxy.github.io/images/girlCrawler.jpg">
 
 
 
@@ -89,7 +94,7 @@ Quick">
   };
 </script>
 
-  <title> Hello World | 豆CODE年华 </title>
+  <title> girlCrawler——一款基于cheerio的网络爬虫工具 | 豆CODE年华 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -229,7 +234,7 @@ Quick">
             
             
               
-                Hello World
+                girlCrawler——一款基于cheerio的网络爬虫工具
               
             
           </h1>
@@ -241,38 +246,19 @@ Quick">
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-03-02T19:25:43+08:00" content="2016-03-02">
-              2016-03-02
+            <time itemprop="dateCreated" datetime="2016-03-26T22:07:18+08:00" content="2016-03-26">
+              2016-03-26
             </time>
           </span>
 
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/Hexo/" itemprop="url" rel="index">
-                    <span itemprop="name">Hexo</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
           
 
           
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/03/02/hello-world/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/02/hello-world/" itemprop="commentsCount"></span>
+                <a href="/2016/03/26/girlCrawler/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/03/26/girlCrawler/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -294,15 +280,36 @@ Quick">
       
 
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a><br><a id="more"></a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+        <hr>
+<p>得益于身边各种老司机带路，得知一个极好的美女图片资源网站，但分类目录太多频繁点击鼠标实在是太累了，本着辛苦自己服务大家的无私奉献精神，立志要开发一个工具能够一键下载网站上所有相关图片。于是很自然的就想到了爬虫，苦于技术有限，只会一点点<a href="https://nodejs.org/en/" target="_blank" rel="external">node.js</a>，所以初步决定用node作为开发语言。</p>
+<p>皇天不负有心人，果然很快就发现了一款神器——<a href="https://www.npmjs.com/package/cheerio" target="_blank" rel="external">cheerio</a>。</p>
+<p>cheerio是nodejs的抓取页面模块，为服务器特别定制的，快速、灵活、实施的jQuery核心实现，适合各种Web爬虫程序。它的优势在于：</p>
+<ol>
+<li>相似的语法: Cheerio 包括了 jQuery 核心的子集。Cheerio  从jQuery库中去除了所有 DOM不一致性和浏览器尴尬的部分，揭示了它真正优雅的API。</li>
+<li>闪电般的块: Cheerio 工作在一个非常简单，一致的DOM模型之上。解析，操作，呈送都变得难以置信的高效。基础的端到端的基准测试显示Cheerio 大约比JSDOM快八倍(8x)。</li>
+<li>巨灵活: Cheerio 封装了兼容的htmlparser。Cheerio 几乎能够解析任何的 HTML 和 XML document。</li>
+</ol>
+<h4 id="废话不多说，先上一张成品图："><a href="#废话不多说，先上一张成品图：" class="headerlink" title="废话不多说，先上一张成品图："></a>废话不多说，先上一张成品图：</h4><p><img src="/images/girlCrawler.jpg" alt="girlCrawler"></p>
+<a id="more"></a>
+<h2 id="girlCrawler具有以下功能和特性"><a href="#girlCrawler具有以下功能和特性" class="headerlink" title="girlCrawler具有以下功能和特性:"></a>girlCrawler具有以下功能和特性:</h2><ul>
+<li>爬取到网站上所有主体下的图片列表</li>
+<li>在本地建立与各主题对应的文件夹</li>
+<li>将爬取到的图片下载到本地对应主题的文件夹下</li>
+<li>多次运行工程能够检测图片文件是否已经存在，如存在则不再下载，只下载新的图片，节省流量</li>
+</ul>
+<h2 id="girlCrawler的设计逻辑："><a href="#girlCrawler的设计逻辑：" class="headerlink" title="girlCrawler的设计逻辑："></a>girlCrawler的设计逻辑：</h2><ol>
+<li>分析所要爬取的网页结构，获取所有分目录链接;</li>
+</ol>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">download(baseUrl, <span class="function"><span class="keyword">function</span>(<span class="params">data</span>) </span>&#123;</span><br><span class="line">	<span class="keyword">if</span> (data) &#123;</span><br><span class="line">		<span class="keyword">var</span> $ = cheerio.load(data);</span><br><span class="line"></span><br><span class="line">		$(<span class="string">"#tagcloud-cc a"</span>).each(<span class="function"><span class="keyword">function</span>(<span class="params">i, e</span>) </span>&#123;</span><br><span class="line">			<span class="keyword">var</span> listUrl = $(e).attr(<span class="string">"href"</span>);</span><br><span class="line">			<span class="keyword">var</span> urlTitle = $(e).text();</span><br><span class="line">			urlList.push(&#123;</span><br><span class="line">				url: listUrl,</span><br><span class="line">				title: urlTitle</span><br><span class="line">			&#125;)</span><br><span class="line">		&#125;)</span><br><span class="line">		callback(urlList);</span><br><span class="line">		<span class="built_in">console</span>.log(<span class="string">"Done getting url list!"</span>);</span><br><span class="line">	&#125; <span class="keyword">else</span> <span class="built_in">console</span>.log(<span class="string">"error"</span>);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<ol>
+<li>遍历所有分目录，并获取每个分目录下的图片src属性列表;</li>
+</ol>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">urlList.forEach(<span class="function"><span class="keyword">function</span>(<span class="params">element, index</span>) </span>&#123;</span><br><span class="line">	<span class="built_in">console</span>.log(element.url + <span class="string">" : "</span> + index);</span><br><span class="line">	picArr[index] = [];</span><br><span class="line"></span><br><span class="line">	<span class="keyword">var</span> path = rootPath + element.title + <span class="string">'/'</span>;</span><br><span class="line">	checkFolderExist(path);</span><br><span class="line">	download(element.url, <span class="function"><span class="keyword">function</span>(<span class="params">data</span>) </span>&#123;</span><br><span class="line">		<span class="keyword">if</span> (data) &#123;</span><br><span class="line">			<span class="keyword">var</span> $ = cheerio.load(data);</span><br><span class="line"></span><br><span class="line">			$(<span class="string">".entry-content img"</span>).each(<span class="function"><span class="keyword">function</span>(<span class="params">i, e</span>) </span>&#123;</span><br><span class="line">				<span class="keyword">var</span> picUrl = $(e).attr(<span class="string">"src"</span>);</span><br><span class="line">				<span class="keyword">var</span> picName = picUrl.slice(picUrl.lastIndexOf(<span class="string">"/"</span>) + <span class="number">1</span>, picUrl.length);</span><br><span class="line">				<span class="keyword">var</span> picTitle = $(e).attr(<span class="string">'alt'</span>);</span><br><span class="line">				picArr[index].push(&#123;</span><br><span class="line">					url: picUrl,</span><br><span class="line">					name: picName,</span><br><span class="line">					title: picTitle</span><br><span class="line">				&#125;)</span><br><span class="line">			&#125;);</span><br><span class="line">			storeImgToLocal(picArr[index], element.title);</span><br><span class="line">		&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">			<span class="built_in">console</span>.log(<span class="string">"error"</span>);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;)</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<ol>
+<li>根据图片src属性去下载图片并放在建立的分类文件夹下。</li>
+</ol>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">picArr.forEach(<span class="function"><span class="keyword">function</span>(<span class="params">element, i</span>) </span>&#123;</span><br><span class="line">	<span class="keyword">var</span> picFullPath = rootPath + title + <span class="string">'/'</span> + element.name;</span><br><span class="line">	<span class="keyword">if</span> (!fs.existsSync(picFullPath)) &#123;</span><br><span class="line">		http.get(element.url, <span class="function"><span class="keyword">function</span>(<span class="params">res</span>) </span>&#123;</span><br><span class="line">			<span class="keyword">var</span> imgData = <span class="string">""</span>;</span><br><span class="line"></span><br><span class="line">			res.setEncoding(<span class="string">"binary"</span>); <span class="comment">//一定要设置response的编码为binary否则会下载下来的图片打不开</span></span><br><span class="line"></span><br><span class="line">			res.on(<span class="string">'data'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">chunk</span>) </span>&#123;</span><br><span class="line">				imgData += chunk;</span><br><span class="line">			&#125;)</span><br><span class="line">			res.on(<span class="string">'end'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">				fs.writeFile(picFullPath, imgData, <span class="string">"binary"</span>, <span class="function"><span class="keyword">function</span>(<span class="params">err</span>) </span>&#123;</span><br><span class="line">					<span class="keyword">if</span> (err) &#123;</span><br><span class="line">						<span class="keyword">throw</span> err;</span><br><span class="line">					&#125;</span><br><span class="line">					<span class="built_in">console</span>.log(++num + <span class="string">':Download '</span> + element.name + <span class="string">' success!'</span>);</span><br><span class="line">				&#125;)</span><br><span class="line"></span><br><span class="line">			&#125;).on(<span class="string">'error'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">				<span class="built_in">console</span>.log(<span class="string">'error!'</span>);</span><br><span class="line">			&#125;)</span><br><span class="line">		&#125;)</span><br><span class="line">	&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">		<span class="comment">// do nothing</span></span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+<h3 id="项目已上传至github"><a href="#项目已上传至github" class="headerlink" title="项目已上传至github"></a>项目已上传至github</h3><p><a href="https://github.com/xuelangcxy/girlCrawler.git" target="_blank" rel="external">girlCrawler</a>——具体用法和操作在github均有详细介绍</p>
 
       
     </div>
@@ -317,7 +324,13 @@ Quick">
       
         <div class="post-tags">
           
-            <a href="/tags/Hexo/" rel="tag">#Hexo</a>
+            <a href="/tags/Node-js/" rel="tag">#Node.js</a>
+          
+            <a href="/tags/cheerio/" rel="tag">#cheerio</a>
+          
+            <a href="/tags/爬虫/" rel="tag">#爬虫</a>
+          
+            <a href="/tags/美女/" rel="tag">#美女</a>
           
         </div>
       
@@ -326,13 +339,13 @@ Quick">
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2016/03/24/echarts-for-air-quality/" rel="next" title="echart绘制空气质量变化趋势图">
+                <i class="fa fa-chevron-left"></i> echart绘制空气质量变化趋势图
+              </a>
+            
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/03/24/echarts-for-air-quality/" rel="prev" title="echart绘制空气质量变化趋势图">
-                echart绘制空气质量变化趋势图 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -347,10 +360,10 @@ Quick">
 
     <div class="post-spread">
       
-        <div class="ds-share flat" data-thread-key="2016/03/02/hello-world/"
-     data-title="Hello World"
+        <div class="ds-share flat" data-thread-key="2016/03/26/girlCrawler/"
+     data-title="girlCrawler——一款基于cheerio的网络爬虫工具"
      data-content=""
-     data-url="http://xuelangcxy.github.io/2016/03/02/hello-world/">
+     data-url="http://xuelangcxy.github.io/2016/03/26/girlCrawler/">
   <div class="ds-share-inline">
     <ul  class="ds-share-icons-16">
 
@@ -380,8 +393,8 @@ Quick">
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/03/02/hello-world/"
-           data-title="Hello World" data-url="http://xuelangcxy.github.io/2016/03/02/hello-world/">
+      <div class="ds-thread" data-thread-key="2016/03/26/girlCrawler/"
+           data-title="girlCrawler——一款基于cheerio的网络爬虫工具" data-url="http://xuelangcxy.github.io/2016/03/26/girlCrawler/">
       </div>
     
   </div>
@@ -527,7 +540,7 @@ Quick">
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#废话不多说，先上一张成品图："><span class="nav-number">1.</span> <span class="nav-text">废话不多说，先上一张成品图：</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#girlCrawler具有以下功能和特性"><span class="nav-number"></span> <span class="nav-text">girlCrawler具有以下功能和特性:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#girlCrawler的设计逻辑："><span class="nav-number"></span> <span class="nav-text">girlCrawler的设计逻辑：</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#项目已上传至github"><span class="nav-number"></span> <span class="nav-text">项目已上传至github</span></a></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator">
