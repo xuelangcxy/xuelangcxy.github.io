@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://xuelangcxy.github.io/"/>
-  <updated>2016-03-26T14:46:35.246Z</updated>
+  <updated>2016-03-27T03:51:05.919Z</updated>
   <id>http://xuelangcxy.github.io/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://xuelangcxy.github.io/2016/03/26/girlCrawler/"/>
     <id>http://xuelangcxy.github.io/2016/03/26/girlCrawler/</id>
     <published>2016-03-26T14:07:18.000Z</published>
-    <updated>2016-03-26T14:46:35.246Z</updated>
+    <updated>2016-03-27T03:51:05.919Z</updated>
     
     <content type="html">&lt;hr&gt;
 &lt;p&gt;得益于身边各种老司机带路，得知一个极好的美女图片资源网站，但分类目录太多频繁点击鼠标实在是太累了，本着辛苦自己服务大家的无私奉献精神，立志要开发一个工具能够一键下载网站上所有相关图片。于是很自然的就想到了爬虫，苦于技术有限，只会一点点&lt;a href=&quot;https://nodejs.org/en/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;node.js&lt;/a&gt;，所以初步决定用node作为开发语言。&lt;/p&gt;
@@ -68,6 +68,8 @@
 &lt;h4 id=&quot;废话不多说，先上一张成品图：&quot;&gt;&lt;a href=&quot;#废话不多说，先上一张成品图：&quot; class=&quot;headerlink&quot; title=&quot;废话不多说，先上一张成品图：&quot;&gt;&lt;/a&gt;废话不多说，先上一张成品图：&lt;/h4&gt;&lt;p&gt;&lt;img src=&quot;/images/girlCrawler.jpg&quot; alt=&quot;girlCrawler&quot;&gt;&lt;/p&gt;
     
     </summary>
+    
+      <category term="Node.js" scheme="http://xuelangcxy.github.io/categories/Node-js/"/>
     
     
       <category term="Node.js" scheme="http://xuelangcxy.github.io/tags/Node-js/"/>
